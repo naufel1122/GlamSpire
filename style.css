@@ -254,7 +254,7 @@ header.active .button:hover {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: top;
 }
 @media (max-width: 768px) {
   .parallax {
