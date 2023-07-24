@@ -5,9 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-
 /* ===================== */
-
 
 /* ===================== */
 * {
@@ -198,28 +196,29 @@ header.active .button:hover {
 }
 
 /* ======== */
-.main{
+.main {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 21px;
 }
-.main .card{
+.main .card {
   height: 450px;
 }
-.main .card .card-title{
+.main .card .card-title {
   font-size: 24px;
   font-weight: 800;
   font-family: "Raleway", sans-serif;
   color: #6e6969;
 }
-.main .card:hover{
-transform: scale(1.02);
-transition:.5s ;
-cursor: pointer;
-/* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+.main .card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.main .card .btn{
+.main .card .btn {
   height: 40px;
   width: 150px;
   outline: none;
@@ -229,47 +228,79 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   font-weight: bold;
   padding: 7px;
 }
-.main .card .btn:hover{
+.main .card .btn:hover {
   transform: scale(1.05);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 /* ================ */
-.carousel-inner-001 .carousel-item-001{
+.carousel-inner-001 .carousel-item-001 {
   max-width: 100%;
   overflow: hidden;
 }
-.carousel-inner-001 .carousel-item-001 img{
+.carousel-inner-001 .carousel-item-001 img {
   max-width: 100%;
   height: 850px;
   display: block;
 }
-@media (max-width:768px) {
-  .carousel-inner-001 .carousel-item-001{
+@media (max-width: 768px) {
+  .carousel-inner-001 .carousel-item-001 {
     max-width: 100%;
     overflow: hidden;
   }
-  .carousel-inner-001 .carousel-item-001 img{
+  .carousel-inner-001 .carousel-item-001 img {
     max-width: 100%;
     height: 350px;
     display: block;
-  } 
+  }
 }
-.carousel-caption h4{
-  margin-top:25rem;
+.carousel-caption h4 {
+  margin-top: 25rem;
   font-size: 44px;
   font-weight: 700;
   color: #bababa;
   text-shadow: 0 10px -24px 12px gray;
   text-shadow: 2px 2px 4px black, -2px -2px 4px rgb(215, 208, 208);
 }
-.carousel-caption h1{
+.carousel-caption h1 {
   font-size: 62px;
-  color:#bababa;
+  color: #bababa;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px black, -2px -2px 4px rgb(215, 208, 208);
-
 }
 
+/* ============= */
+.shop-by h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.main-first-card {
+  display: flex;
+  justify-content: center;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.image-container img {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.image-text {
+  position: absolute;
+  bottom: 20px; /* Position the text 10px from the bottom of the container */
+  left: 50%; /* Position the text 50% from the left of the container */
+  transform: translateX(-50%); /* Center the text horizontally */
+  font-size: 18px;
+  color: #333;
+  background-color: #fff; /* Add a semi-transparent background to the text */
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 /* ============= */
 
 .image-1 {
@@ -277,17 +308,97 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
 }
-.image-1 h1{
+.image-1 h1 {
   font-size: 48px;
   font-weight: 600;
 }
-/* .picture {
+.picture {
   height: 850px;
   width: 100%;
   justify-content: center;
   padding: 40px;
-} */
+}
+/* =============== */
+.div-puma {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.div-2-puma {
+  height: 600px;
+  width: 50%;
+  background-color: #585553;
+}
+.div-2-puma h1 {
+  background: linear-gradient(to right, #ffffff, #ffbc81);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20rem;
+  font-size: 2.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+.div-2-puma h2 {
+  color: #f1f6f9;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5em;
+}
+.div-2-puma .btn-shop {
+  background-color: #2e2d2d;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+}
+.div-3-puma {
+  height: 600px;
+  width: 960px;
+  background-image: url(./images/pexel\ clothing\ 3.jpg);
+  /* max-width: 100%; */
+  /* text-align: center; */
+}
+@media (max-width: 910px) {
+  .div-puma {
+    height: 600px;
+    width: 100%;
+    /* background-color: #8a7350; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* margin-bottom: 12em; */
+  }
+  .div-2-puma {
+    height: 400px;
+    width: 100%;
+    background-color: #caba9f;
+  }
+  .div-2-puma h1 {
+    background: linear-gradient(to right, #603e20, #aa9685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12rem;
+    /* margin-left: 50px; */
+    font-size: 2.5em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+  }
+  .div-3-puma {
+    background-repeat: no-repeat;
+    /* background-image: url(./images/person\ -\ Copy.jpg); */
+    max-width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+}
 
+@media (max-width: 740px) {
+  .div-3-puma {
+    background-image: url(./images/person\ -\ Copy.jpg);
+    background-size: cover;
+  }
+}
 /* ======FOOTER======= */
 i {
   font-size: 2.4rem;

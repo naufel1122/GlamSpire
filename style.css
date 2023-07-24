@@ -607,7 +607,6 @@ header.active .button:hover {
   display: flex;
   gap: 1em;
 }
-
 .css .figure img {
   height: 500px;
 }
