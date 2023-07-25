@@ -279,6 +279,7 @@ header.active .button:hover {
 .main-first-card {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 .image-container {
   position: relative;
@@ -288,15 +289,19 @@ header.active .button:hover {
   display: flex;
   flex-direction: row;
   height: 500px;
+  transition: all 0.4s;
 }
-.image-text {
+.image-container img:hover{
+  transform: scale(1.02);
+}
+.image-text a {
   position: absolute;
-  bottom: 20px; /* Position the text 10px from the bottom of the container */
-  left: 50%; /* Position the text 50% from the left of the container */
-  transform: translateX(-50%); /* Center the text horizontally */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 18px;
   color: #333;
-  background-color: #fff; /* Add a semi-transparent background to the text */
+  background-color: #fff;
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -313,11 +318,13 @@ header.active .button:hover {
   font-weight: 600;
 }
 .picture {
-  height: 850px;
+  height: 90vh;
   width: 100%;
   justify-content: center;
-  padding: 40px;
+  padding: 80px;
 }
+/* =============== */
+#more {display: none;}
 /* =============== */
 .div-puma {
   height: 600px;
@@ -350,7 +357,13 @@ header.active .button:hover {
   color: white;
   width: 150px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+  justify-content: center;
+  margin-left: 35%;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .div-3-puma {
   height: 600px;
@@ -359,6 +372,7 @@ header.active .button:hover {
   /* max-width: 100%; */
   /* text-align: center; */
 }
+
 @media (max-width: 910px) {
   .div-puma {
     height: 600px;
