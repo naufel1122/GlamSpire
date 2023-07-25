@@ -267,7 +267,12 @@ header.active .button:hover {
   text-transform: uppercase;
   text-shadow: 2px 2px 4px black, -2px -2px 4px rgb(215, 208, 208);
 }
-
+.picture {
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  padding: 80px;
+}
 /* ============= */
 .shop-by h1 {
   font-size: 48px;
@@ -317,14 +322,25 @@ header.active .button:hover {
   font-size: 48px;
   font-weight: 600;
 }
-.picture {
-  height: 90vh;
-  width: 100%;
-  justify-content: center;
-  padding: 80px;
+
+/* =============== */
+.main .card .btn{
+  background: #333;
 }
 /* =============== */
+
 #more {display: none;}
+#myBtn{
+  text-align: center;
+  background-color: #333;
+  outline-style: none;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  border-radius: 12px;
+  margin-left: 42%;
+  margin-top: 6%;
+}
 /* =============== */
 .div-puma {
   height: 600px;
