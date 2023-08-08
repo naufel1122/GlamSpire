@@ -196,14 +196,18 @@ header.active .button:hover {
 }
 
 /* ======== */
-.carousel-inner .carousel-item img{
+
+.carousel-inner-top .carousel-item img{
   max-width: 100%;
   height: 800px;
 }
 @media (max-width:786px){
-  .carousel-inner .carousel-item img{
+  .carousel-inner-top .carousel-item img{
     max-width: 100%;
     height: 400px;
+  }
+  .top-carousel{
+    margin-top: 70px;
   }
 }
 
@@ -317,24 +321,25 @@ header.active .button:hover {
 .image-container {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 .image-container img {
   display: flex;
   flex-direction: row;
   height: 500px;
-  transition: all 0.4s;
+  width: 400px;
+  transition: all ease 0.5s;
 }
 .image-container img:hover{
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 @media (max-width:786px){
   .image-container img{
-    padding: 20px;
+    /* padding: 5px; */
   }
   .image-text a{
     margin-bottom: 30px;
     left: 50%; 
-  padding: 10px 20px;
 
   }
 }
@@ -364,7 +369,7 @@ header.active .button:hover {
 
 /* =============== */
 .main .card .btn{
-  background: #333;
+  /* background: #333; */
 }
 /* =============== */
 
