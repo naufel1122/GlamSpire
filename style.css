@@ -4,8 +4,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-/* PRE-LOADER */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-width: 100%;
+  min-height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: var(--body-color);
+  background-color: var(--background-color);
+  transition: color 0.25s, background-color 0.25s;
+  overflow-x: hidden;
+  background-color: #f1f6f9;
+}
 
+/* ================ */
+
+
+/* PRE-LOADER */
 .loader_bg {
   position: fixed;
   z-index: 999999;
@@ -54,31 +76,7 @@
 }
 
 /* ===================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  min-width: 100%;
-  min-height: auto;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  color: var(--body-color);
-  background-color: var(--background-color);
-  transition: color 0.25s, background-color 0.25s;
-  overflow-x: hidden;
-  background-color: #f1f6f9;
-}
 
-/* THEME DARK / LIGHT CSS START HERE  */
-a {
-  text-decoration: none;
-  color: #fff;
-}
 
 /* NAVIGATION CSS START HERE */
 .primary-header {
@@ -323,22 +321,20 @@ header.active .button:hover {
   background-color: #f7f7f7;
 }
 /* ============= */
-.div {
+/* .div {
+  
   min-height: 600px;
   min-width: 100%;
   display: flex;
   flex-direction: row;
   gap: 10px;
-  /* background-color: #151515; */
 }
 .div .div-1 {
   position: relative;
   transition: background-size 0.5s;
   min-height: 100%;
   width: 925.5px;
-  /* margin-left: 1em; */
   padding: 2em;
-  /* background-color: #2ad39f; */
   background-image: url(./images/women-clothing.webp);
   background-repeat: no-repeat;
   filter: saturate(0.5);
@@ -349,7 +345,6 @@ header.active .button:hover {
   transform: scale(1.02);
   transition: all 0.4s;
   opacity: 1;
-  /* background-size: 110%; */
 }
 .div .div-1 h1 {
   display: flex;
@@ -361,12 +356,10 @@ header.active .button:hover {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
-/* background-repeat: no-repeat; filter: saturate(0.5); background-position: top; */
 
 .div .div-2 {
   min-height: 100%;
   min-width: 50%;
-  /* background-color: #808080; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -378,11 +371,9 @@ header.active .button:hover {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   gap: 10px;
 }
 .div .div-2 .div-one .ff {
-  /* background-color: #d3d3d3; */
   background-image: url(./images/Mens-fashion.webp);
   height: 100%;
   min-width: 50%;
@@ -390,7 +381,6 @@ header.active .button:hover {
   filter: 0.5;
   background-position: top;
   opacity: 0.7;
-  /* background-repeat: no-repeat; filter: saturate(0.5); background-position: top; */
 }
 .div .div-2 .div-one .ff:hover {
   transform: scale(1.04);
@@ -464,15 +454,12 @@ header.active .button:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
-    /* background-color: #151515; */
   }
   .div .div-1 {
     position: relative;
     transition: background-size 0.5s;
     height: 100%;
     width: 100%;
-    /* background-color: #2ad39f; */
     background-image: url(./images/women-clothing.webp);
     background-repeat: no-repeat;
     filter: saturate(0.5);
@@ -483,7 +470,6 @@ header.active .button:hover {
     transform: scale(1.02);
     transition: all 0.4s;
     opacity: 1;
-    /* background-size: 110%; */
   }
   .div .div-1 h1 {
     display: flex;
@@ -499,10 +485,8 @@ header.active .button:hover {
   .div .div-2 {
     height: 100%;
     width: 100%;
-    /* background-color: #808080; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     column-gap: 2em;
   }
   .div .div-2 .div-one {
@@ -510,7 +494,6 @@ header.active .button:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     justify-content: center;
   }
   .div .div-2 .div-one .ff {
@@ -589,6 +572,61 @@ header.active .button:hover {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
   }
+} */
+
+.div-1{
+  position: relative;
+  display: inline-block;
+}
+.div-1 h1{
+  position: absolute;
+  top: 50%; /* Adjust vertically */
+  left: 50%; /* Adjust horizontally */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Background color for better text visibility */
+  padding: 10px;
+  font-size: 18px;
+}
+.div-2 .div-one .ff{
+  position: relative;
+  display: inline-block;
+}
+.div-2 .div-one .ff h1{
+  position: absolute;
+  top: 50%; /* Adjust vertically */
+  left: 50%; /* Adjust horizontally */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Background color for better text visibility */
+  padding: 10px;
+  font-size: 18px;
+}
+.div-2 .div-one .sss{
+  position: relative;
+  display: inline-block;
+}
+.div-2 .div-one .sss h1{
+  position: absolute;
+  top: 50%; /* Adjust vertically */
+  left: 50%; /* Adjust horizontally */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Background color for better text visibility */
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+.div-two{
+  position: relative;
+  display: inline-block;
+}
+.div-two h1{
+  position: absolute;
+  top: 50%; /* Adjust vertically */
+  left: 50%; /* Adjust horizontally */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Background color for better text visibility */
+  padding: 10px;
+  font-size: 18px;
 }
 /* ================== */
 .mens-div {

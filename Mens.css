@@ -334,9 +334,9 @@ header.active .button:hover {
   transform: scale(1.1);
 }
 @media (max-width:786px){
-  .image-container img{
-    /* padding: 5px; */
-  }
+  /* .image-container img{
+    padding: 5px;
+  } */
   .image-text a{
     margin-bottom: 30px;
     left: 50%; 
@@ -368,9 +368,7 @@ header.active .button:hover {
 }
 
 /* =============== */
-.main .card .btn{
-  /* background: #333; */
-}
+
 /* =============== */
 
 #more {display: none;}
@@ -429,19 +427,14 @@ header.active .button:hover {
   height: 600px;
   width: 960px;
   background-image: url(./images/pexel\ clothing\ 3.jpg);
-  /* max-width: 100%; */
-  /* text-align: center; */
 }
 
 @media (max-width: 910px) {
   .div-puma {
     height: 600px;
     width: 100%;
-    /* background-color: #8a7350; */
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
-    /* margin-bottom: 12em; */
   }
   .div-2-puma {
     height: 400px;
@@ -453,14 +446,12 @@ header.active .button:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 12rem;
-    /* margin-left: 50px; */
     font-size: 2.5em;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     text-align: center;
   }
   .div-3-puma {
     background-repeat: no-repeat;
-    /* background-image: url(./images/person\ -\ Copy.jpg); */
     max-width: 100%;
     height: 400px;
     text-align: center;
