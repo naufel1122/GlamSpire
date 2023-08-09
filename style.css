@@ -326,6 +326,40 @@ header.active .button:hover {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .div {
+    height: auto;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .div-1 {
+    position: relative;
+    display: inline-block;
+    min-height: 80%;
+    min-width: 100%;
+    overflow: hidden;
+  }
+  .div-1 img {
+    transition: all ease 0.5s;
+    opacity: 0.7;
+    height: 100%;
+  }
+  .div-1 img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  .div-1 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    font-size: 18px;
+  }
+}
 .div-1 {
   position: relative;
   display: inline-block;
@@ -344,19 +378,61 @@ header.active .button:hover {
 }
 .div-1 h1 {
   position: absolute;
-  top: 50%; /* Adjust vertically */
-  left: 50%; /* Adjust horizontally */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.7
-  ); /* Background color for better text visibility */
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   font-size: 18px;
 }
 /* =================== */
+@media (max-width: 786px) {
+  .div-2 {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .div-2 .div-one {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 100%;
+    gap: 20px;
+  }
+  .div-2 .div-one .ff {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .div-2 .div-one .ff img {
+    transition: all ease 0.5s;
+    width: 100%;
+    opacity: 0.7;
+  }
+  .div-2 .div-one .ff img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  .div-2 .div-one .sss {
+    position: relative;
+    display: inline-block;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+  }
+  .div-2 .div-one .sss img {
+    transition: all ease 0.5s;
+    width: 100%;
+    opacity: 0.7;
+  }
+  .div-2 .div-one .sss img:hover {
+    transform: scale(1.2);
+  }
+}
 .div-2 {
   height: 100%;
   width: 50%;
@@ -408,12 +484,12 @@ header.active .button:hover {
   width: 50%;
   overflow: hidden;
 }
-.div-2 .div-one .sss img{
-   transition: all ease 0.5s;
+.div-2 .div-one .sss img {
+  transition: all ease 0.5s;
   width: 100%;
   opacity: 0.7;
 }
-.div-2 .div-one .sss img:hover{
+.div-2 .div-one .sss img:hover {
   transform: scale(1.2);
 }
 .div-2 .div-one .sss h1 {
@@ -439,12 +515,12 @@ header.active .button:hover {
   width: 100%;
   overflow: hidden;
 }
-.div-two img{
+.div-two img {
   transition: all ease 0.5s;
   opacity: 0.7;
   width: 100%;
 }
-.div-two img:hover{
+.div-two img:hover {
   transform: scale(1.2);
   opacity: 1;
 }
